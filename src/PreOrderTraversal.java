@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.List;
 
 
@@ -18,7 +19,19 @@ import java.util.List;
 public class PreOrderTraversal {
 
 
-    public static List<Integer> preOrderTraverlal()
+     public static void preOrder(TreeNode root, ArrayList<Integer> list){
+         if(root == null) return;
+
+         list.add(root.val);
+         preOrder(root.left, list);
+         preOrder(root.right, list);
+
+
+     }
+
+    public static List<Integer> preOrderTraverlal(TreeNode root){
+
+    }
 
 
     public static void main(String[] args) {
