@@ -1,3 +1,4 @@
+import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -30,7 +31,9 @@ public class PreOrderTraversal {
      }
 
     public static List<Integer> preOrderTraverlal(TreeNode root){
-
+        ArrayList<Integer> list = new ArrayList<>();
+        preOrder(root, list);
+        return list;
     }
 
 
